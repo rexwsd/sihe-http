@@ -1,0 +1,30 @@
+{
+    "name": "sihebrothers/http",
+    "description": "四合兄弟基于GuzzleHttp二次封装基于驱动管理的http服务",
+    "type": "libray",
+    "license": "AFL-3.0",
+    "authors": [
+        {
+            "name": "栗田庆",
+            "email": "5198895@qq.com"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^7.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Sihe\\Http\\HttpServiceProvider"
+            ],
+            "aliases": {
+                "Http": "Sihe\\Http\\Facades"
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Sihe\\Http\\": "src/"
+        }
+    }
+}
